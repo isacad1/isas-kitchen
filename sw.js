@@ -2,7 +2,7 @@
    Keeps a copy of the app's own files so it opens without internet.
    Always tries the network first, so updates you upload to GitHub show up on the next open.
    Google sign-in, Google Drive and font requests are never stored here. */
-const CACHE = "isas-kitchen-v2";
+const CACHE = "isas-kitchen-v3";
 const FILES = ["./", "index.html", "config.js", "manifest.webmanifest", "icon.svg", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 
 self.addEventListener("install", (e) => {

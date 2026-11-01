@@ -1,6 +1,6 @@
 # Isa's Kitchen
 
-A Filipino recipe journal and weekly meal planner: write recipes, plan the week from them, flip through them as a recipe book, add cooking photos, and save recipes, the meal plan and the palengke list as PDFs.
+A Filipino recipe journal and weekly meal planner: write recipes, plan the week from them, flip through them as a recipe book, add cooking photos, and save recipes, the meal plan and the grocery list as PDFs.
 
 ## How it saves
 
@@ -24,10 +24,28 @@ The app needs a free Google sign-in key ("OAuth client ID").
    - Application type: **Web application**
    - Authorized JavaScript origins: `https://isacad1.github.io`
    - Click **Create** and copy the **Client ID** (it ends in `.apps.googleusercontent.com`).
-5. In `index.html`, find `const GOOGLE_CLIENT_ID="";` and paste the Client ID between the quotes.
+5. In `config.js`, paste the Client ID between the quotes after `googleClientId:`.
 
 While the app stays in "Testing" mode only the test users you added can sign in, which is right for a personal app.
 
 ## Publishing on GitHub Pages
 
 Repository **Settings → Pages → Build and deployment**: Source **Deploy from a branch**, branch **main**, folder **/ (root)**. The app appears at `https://isacad1.github.io/isas-kitchen/` a minute later.
+
+## What each file does
+
+| File | What it's for |
+| --- | --- |
+| `index.html` | The app itself |
+| `config.js` | Settings: your Google sign-in key |
+| `manifest.webmanifest` | Lets phones and computers install Isa's Kitchen as an app, with its own name and icon |
+| `icon.svg`, `icon-192.png`, `icon-512.png`, `apple-touch-icon.png` | The app icon in the sizes browsers, Android and iPhone ask for |
+| `sw.js` | Offline helper: keeps a copy of the app so it opens without internet |
+| `README.md` | This guide |
+
+## Installing it
+
+- **iPhone:** open the site in Safari → Share → Add to Home Screen.
+- **Android:** open it in Chrome → ⋮ → Install app.
+- **Mac:** Safari → File → Add to Dock, or Chrome → ⋮ → Cast, save, and share → Install page as app.
+- **Windows:** Chrome or Edge → Install this site as an app, then pin it to the taskbar.
