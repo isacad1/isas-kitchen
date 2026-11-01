@@ -1,9 +1,9 @@
 <title>Isa's Kitchen</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Pinyon+Script&display=swap">
 <style>
-/* Layout: Nancy Meyers kitchen — a thin blue ticking-stripe wall with the logo tag in the middle and painted lemon branches at its sides, then a crisp white page with white cards; spaced caps for labels, Microsoft Sans Serif to read, script only for the page title. */
+/* Layout: Nancy Meyers kitchen — a thin blue ticking-stripe wall with the logo tag in the middle, then a crisp white page with white cards; spaced caps for labels, Garamond to read, script only for the page title. */
 :root{
   --bg:#FFFFFF; --surface:#FFFFFF; --tint:#F4F8FD; --sunk:#F1F5FA; --line:#DCE5F0;
   --ink:#2E3A46; --muted:#5E6A75;
@@ -13,9 +13,9 @@
   --talong:#8E3446; --danger:#8E3446;
   --shadow:0 1px 2px rgba(46,58,70,.05),0 6px 18px rgba(76,108,166,.08);
   --f-script:"Pinyon Script","Snell Roundhand","Apple Chancery",cursive;
-  --f-display:"Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;
-  --f-body:"Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;
-  --f-mono:"Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;
+  --f-display:"EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;
+  --f-body:"EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;
+  --f-mono:"EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;
   --r:8px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
@@ -35,7 +35,7 @@
   --talong:#E59AA8; --danger:#E59AA8;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35); color-scheme:dark}
 *{box-sizing:border-box}
-body{color:var(--ink);font:400 16px/1.5 var(--f-body);background:var(--bg)}
+body{color:var(--ink);font:400 17.5px/1.5 var(--f-body);background:var(--bg)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
@@ -211,38 +211,38 @@ h3{font:700 1.1rem/1.3 var(--f-body)}
 .printhost{position:fixed;left:-10000px;top:0;width:794px;pointer-events:none}
 
 /* ---- paper pages: shared by the book view and the PDF (fixed paper colors) ---- */
-.pp,.pg{width:794px;background:#FFFFFF;color:#2E3A46;font:400 15px/1.6 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;position:relative;box-sizing:border-box;text-align:left}
+.pp,.pg{width:794px;background:#FFFFFF;color:#2E3A46;font:400 16.5px/1.55 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;position:relative;box-sizing:border-box;text-align:left}
 .pg{min-height:1123px;overflow:hidden}
 .pg *,.pp *{box-sizing:border-box}
 .pp{padding:56px 64px}
 .pg .in{padding:64px 72px 96px;position:relative}
 .pg .tickband{height:16px;background-repeat:repeat;border-bottom:1px solid #DCE5F0}
 .pg .sprig,.pp .sprig{position:absolute;top:-4px;right:-30px;width:250px;height:200px;background:center/contain no-repeat;pointer-events:none}
-.pg .head,.pp .brandline{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #E3DAC6;padding-bottom:10px;margin-bottom:30px;font:600 10px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#2E3A46;position:relative}
+.pg .head,.pp .brandline{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #E3DAC6;padding-bottom:10px;margin-bottom:30px;font:600 10px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.3em;text-transform:uppercase;color:#2E3A46;position:relative}
 .pg .head{max-width:520px}
-.pg .ey,.pp .ey{font:600 10px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#5E6A75;margin-bottom:6px}
+.pg .ey,.pp .ey{font:600 10px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.24em;text-transform:uppercase;color:#5E6A75;margin-bottom:6px}
 .pg .title,.pp h1{font:400 64px/1.12 "Pinyon Script",cursive;color:#2E3A46;margin:6px 0 12px;padding-right:14px;max-width:560px}
-.pg .lede{font:italic 400 17px/1.5 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;color:#5E6A75;max-width:540px;margin:0 0 24px}
+.pg .lede{font:italic 400 17px/1.5 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;color:#5E6A75;max-width:540px;margin:0 0 24px}
 .pg .facts{display:flex;gap:32px;border-top:1px solid #E3DAC6;border-bottom:1px solid #E3DAC6;padding:12px 0;margin-bottom:32px;flex-wrap:wrap}
 .pg .facts div{display:grid;gap:4px}
-.pg .facts b{font:700 18px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;color:#2E3A46}
-.pg .facts span{font:600 9px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#5E6A75}
+.pg .facts b{font:700 18px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;color:#2E3A46}
+.pg .facts span{font:600 9px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.22em;text-transform:uppercase;color:#5E6A75}
 .pg .pill{display:inline-block;border-radius:20px;padding:2px 10px;font-size:11px;margin-right:4px;background:#EEF3FA}
 .pg .cols{display:grid;grid-template-columns:230px 1fr;gap:46px}
-.pg h2,.pp h2{display:inline-block;font:600 11px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#4C6CA6;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid #F2CF3D}
+.pg h2,.pp h2{display:inline-block;font:600 11px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.26em;text-transform:uppercase;color:#4C6CA6;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid #F2CF3D}
 .pg .ing{list-style:none;margin:0;padding:0}
 .pg .ing li{padding:7px 0;border-bottom:1px dotted #E3DAC6;line-height:1.35}
 .pg .steps{list-style:none;margin:0;padding:0;display:grid;gap:14px}
 .pg .steps li{display:grid;grid-template-columns:30px 1fr;align-items:start}
-.pg .steps .n{font:700 15px/1.5 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;color:#4C6CA6}
-.pg .foot{position:absolute;left:72px;right:72px;bottom:34px;display:flex;justify-content:space-between;border-top:1px solid #E3DAC6;padding-top:10px;font:600 9px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#5E6A75}
+.pg .steps .n{font:700 15px/1.5 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;color:#4C6CA6}
+.pg .foot{position:absolute;left:72px;right:72px;bottom:34px;display:flex;justify-content:space-between;border-top:1px solid #E3DAC6;padding-top:10px;font:600 9px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.24em;text-transform:uppercase;color:#5E6A75}
 .pg .paint{position:absolute;inset:0;background:center/cover no-repeat}
 .pg .ptag{position:absolute;left:50%;transform:translateX(-50%);background:#FFFFFF;border:1px solid #DCE5F0;border-radius:2px;padding:40px 52px 28px;text-align:center;box-shadow:0 2px 4px rgba(46,58,70,.1),0 14px 34px rgba(46,58,70,.18);width:max-content;max-width:600px}
 .pg .ptag .hole{position:absolute;top:14px;left:50%;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:#EEF3FA;box-shadow:inset 0 1px 2px rgba(0,0,0,.18)}
 .pg .ptag .bow{position:absolute;top:-44px;left:50%;width:130px;margin-left:-65px}
-.pg .ptag .arc{font:400 12px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.34em;margin-bottom:6px}
+.pg .ptag .arc{font:400 12px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.34em;margin-bottom:6px}
 .pg .ptag .s{font:400 62px/1.1 "Pinyon Script",cursive;padding:0 10px;text-wrap:balance}
-.pg .ptag .c{font:600 11px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.32em;text-transform:uppercase;margin-top:10px}
+.pg .ptag .c{font:600 11px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.32em;text-transform:uppercase;margin-top:10px}
 .pg.cover .ptag{top:380px}
 .pg.cover .foot{border-top:0;justify-content:center;bottom:46px;background:#FFFFFF;left:260px;right:260px;padding:10px;border-radius:2px}
 .pg .hero{height:700px;position:relative;background:#FFFFFF center/cover no-repeat;overflow:hidden}
@@ -252,21 +252,21 @@ h3{font:700 1.1rem/1.3 var(--f-body)}
 .pg .log{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
 .pg .log div{display:grid;gap:6px}
 .pg .log .ph{aspect-ratio:1;background:#EEF3FA center/cover no-repeat;border-radius:2px}
-.pg .log span{font:600 9px/1.2 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#5E6A75}
-.pg .empty-ph{font:italic 400 16px/1.5 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;color:#5E6A75;margin-top:12px}
+.pg .log span{font:600 9px/1.2 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.18em;text-transform:uppercase;color:#5E6A75}
+.pg .empty-ph{font:italic 400 16px/1.5 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;color:#5E6A75;margin-top:12px}
 .pg .toc{display:grid;gap:26px}
 .pg .toc h2{margin-bottom:6px}
-.pg .toc a{display:flex;align-items:baseline;gap:10px;color:#2E3A46;text-decoration:none;padding:6px 0;font:700 16px/1.3 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;cursor:pointer}
+.pg .toc a{display:flex;align-items:baseline;gap:10px;color:#2E3A46;text-decoration:none;padding:6px 0;font:700 16px/1.3 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;cursor:pointer}
 .pg .toc a .dots{flex:1;border-bottom:1px dotted #C9D5E6;transform:translateY(-4px)}
-.pg .toc a .pn{font:400 13px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;color:#4C6CA6}
+.pg .toc a .pn{font:400 13px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;color:#4C6CA6}
 .pp .gl{display:grid;grid-template-columns:1fr 1fr;gap:22px 36px}
 .pp .gl li{list-style:none;margin-left:-20px;display:flex;gap:10px;border-bottom:1px dotted #E3DAC6;padding:3px 0}
 .pp .box{width:12px;height:12px;border:1.2px solid #4C6CA6;border-radius:2px;flex:none;margin-top:6px}
 .pp .box.x{background:#4C6CA6}
 .pp table{width:100%;border-collapse:collapse}.pp td,.pp th{border-bottom:1px solid #E3DAC6;padding:10px 8px;text-align:left;vertical-align:top}
-.pp th{font:600 10px/1 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#5E6A75}
-.pp td.d{font:600 13px/1.2 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;width:90px}
-.pp td.m{font:700 15px/1.3 "Microsoft Sans Serif","MS Sans Serif",Tahoma,"Segoe UI",Arial,sans-serif}
+.pp th{font:600 10px/1 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.22em;text-transform:uppercase;color:#5E6A75}
+.pp td.d{font:600 13px/1.2 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif;letter-spacing:.2em;text-transform:uppercase;width:90px}
+.pp td.m{font:700 15px/1.3 "EB Garamond",Garamond,"Adobe Garamond Pro",Georgia,serif}
 .pp .band{display:none}
 
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:.88rem;z-index:30}
@@ -274,7 +274,7 @@ h3{font:700 1.1rem/1.3 var(--f-body)}
 </style>
 
 <div class="garden" id="garden"><div class="wrap"><div class="logo-tag brand" id="logoTag"><span class="hole"></span>
-  <span class="script">Isa's Kitchen</span><span class="sub">Recipes · Meal plans</span></div></div><img class="lem l" id="lemL" alt=""><img class="lem r" id="lemR" alt=""></div>
+  <span class="script">Isa's Kitchen</span><span class="sub">Recipes · Meal plans</span></div></div></div>
 <header class="top"><div class="wrap">
   <nav class="tabs" aria-label="Sections">
     <a href="#plan" data-tab="plan">Week</a>
@@ -478,7 +478,7 @@ function renderRecipes(){
   if(!S.recipesReady)body=`<div class="empty-state muted">Loading your recipes…</div>`;
   else if(!S.recipes.size)body=`<div class="empty-state"><h2>Your journal is empty</h2><p class="muted">Add the dishes you cook at home: ingredients, steps and your own notes.</p><button class="btn primary" data-act="new">+ Add first recipe</button></div>`;
   else if(!list.length)body=`<div class="empty-state muted">No recipes match that search.</div>`;
-  else body=`<div class="rlist">${list.map(r=>`<button class="rcard" data-act="open" data-id="${esc(r.id)}">${coverId(r)?`<img class="rthumb" src="${esc(PH.url(coverId(r)))}" alt="" loading="lazy">`:`<span class="rwash" style="background-image:url(${paint("sprig2")})"></span>`}
+  else body=`<div class="rlist">${list.map(r=>`<button class="rcard" data-act="open" data-id="${esc(r.id)}">${coverId(r)?`<img class="rthumb" src="${esc(PH.url(coverId(r)))}" alt="" loading="lazy">`:""}
       <h3><span>${esc(r.name)}</span>${r.fav?'<span class="fav" aria-label="Favorite">★</span>':""}</h3>
       <div class="meta"><span>${esc(CAT[r.cat]||"")}</span>${r.mins?`<span>${r.mins} min</span>`:""}${r.serves?`<span>serves ${r.serves}</span>`:""}<span>${(r.ing||[]).length} ingredients</span></div>
       ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>`<span class="tag ${esc(t)}">${esc(tagLabel(t))}</span>`).join("")}</div>`:""}
@@ -754,7 +754,7 @@ const catIdx=c=>{const i=CATS.findIndex(x=>x[0]===c);return i<0?99:i};
 function sortedRecipes(list){return [...(list||S.recipes.values())].sort((a,b)=>catIdx(a.cat)-catIdx(b.cat)||a.name.localeCompare(b.name))}
 const foot=(left,n)=>`<div class="foot"><span>${esc(left)}</span><span>${n?("Page "+n):"Isa's Kitchen"}</span></div>`;
 function ptag(script,caps,arc){return `<div class="ptag"><span class="hole"></span>${arc?`<div class="arc">${esc(arc)}</div>`:""}<div class="s">${esc(script)}</div>${caps?`<div class="c">${esc(caps)}</div>`:""}</div>`}
-const sprigEl=()=>{const u=paint("sprig2"),t=paint("tick");return (t?`<div class="tickband" style="background-image:url(${t})"></div>`:"")+(u?`<div class="sprig" style="background-image:url(${u})"></div>`:"")};
+const sprigEl=()=>{const u=paint("sprig2"),t=paint("tick");return t?`<div class="tickband" style="background-image:url(${t})"></div>`:""};
 function pageCover(count){
   const yr=new Date().getFullYear();
   return `<div class="pg cover"><div class="paint" style="background-image:url(${paint("cover")})"></div>${ptag("Isa's Kitchen","Recipe book")}
@@ -1077,14 +1077,10 @@ function paint(name){
     else if(name==="sprig2"){[c,ctx]=canvasFor(300,240);r=mulberry(9);branch(ctx,282,70,68,Math.PI-.3,r,2);url=c.toDataURL("image/png")}
     else if(name==="cover"){
       const w=794,h=1123;[c,ctx]=canvasFor(w,h);paintStripes(ctx,w,h);r=mulberry(33);
-      branch(ctx,-10,120,96,.35,r,3);branch(ctx,804,250,90,Math.PI-.35,r,2);
-      branch(ctx,-10,960,92,-.3,r,2);branch(ctx,804,1040,96,Math.PI+.35,r,3);
-      url=c.toDataURL("image/jpeg",.9);
+            url=c.toDataURL("image/jpeg",.9);
     }else if(name.startsWith("hero:")){
       const w=794,h=700;[c,ctx]=canvasFor(w,h);paintStripes(ctx,w,h);r=mulberry(hashStr(name));
-      const left=r()>.5;branch(ctx,left?-10:804,90+r()*80,90,left?.3:Math.PI-.3,r,2);
-      branch(ctx,left?804:-10,520+r()*90,84,left?Math.PI+.3:-.3,r,r()>.5?3:2);
-      url=c.toDataURL("image/jpeg",.9);
+            url=c.toDataURL("image/jpeg",.9);
     }
   }catch{url=""}
   PAINTS[name]=url;return url;
